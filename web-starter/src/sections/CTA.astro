@@ -1,0 +1,17 @@
+---
+import Button from '@/components/Button.astro';
+import Container from '@/components/Container.astro';
+import type { CTAProps } from '@/content/types';
+
+const { section } = Astro.props as CTAProps;
+---
+
+<section class="cta section" id={section.id} aria-labelledby={`${section.id}-heading`}>
+  <Container>
+    <div class="cta__box">
+      <h2 class="cta__heading" id={`${section.id}-heading`}>{section.heading}</h2>
+      <p class="cta__text">{section.text}</p>
+      <Button href={section.action.href} label={section.action.label}>{section.action.label}</Button>
+    </div>
+  </Container>
+</section>

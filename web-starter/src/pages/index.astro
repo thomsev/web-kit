@@ -1,0 +1,29 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import CTA from '@/sections/CTA.astro';
+import Features from '@/sections/Features.astro';
+import Hero from '@/sections/Hero.astro';
+import { getPageBySlug, getSiteData } from '@/lib/content';
+import { buildSeo } from '@/lib/seo';
+
+const siteData = getSiteData();
+const page = getPageBySlug('/');
+const seo = buildSeo(siteData.site, page);
+---
+
+<BaseLayout {...seo}>
+  {
+    page.sections.map((section) => {
+      switch (section.type) {
+        case 'hero':
+          return <Hero section={section} />;
+        case 'features':
+          return <Features section={section} />;
+        case 'cta':
+          return <CTA section={section} />;
+        default:
+          return null;
+      }
+    })
+  }
+</BaseLayout>

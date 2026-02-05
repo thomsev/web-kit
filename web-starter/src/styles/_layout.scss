@@ -1,0 +1,73 @@
+@use './tokens' as *;
+
+.container {
+  margin-inline: auto;
+  max-width: 72rem;
+  padding-inline: $space-5;
+}
+
+.section {
+  padding-block: $space-8;
+}
+
+.hero__content {
+  max-width: 48rem;
+}
+
+.hero__heading {
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.2;
+  margin: 0;
+}
+
+.hero__lead {
+  color: $color-muted;
+  margin: $space-4 0 0;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-3;
+  margin-top: $space-5;
+}
+
+.features__heading,
+.cta__heading {
+  margin: 0;
+}
+
+.features__list {
+  display: grid;
+  gap: $space-4;
+  list-style: none;
+  margin-top: $space-5;
+}
+
+.features__item {
+  background: $color-surface;
+  border: 1px solid $color-border;
+  border-radius: $radius-md;
+  padding: $space-5;
+}
+
+.features__item-title {
+  margin: 0;
+}
+
+.features__item-text {
+  color: $color-muted;
+  margin: $space-2 0 0;
+}
+
+.cta__box {
+  background: $color-surface;
+  border: 1px solid $color-border;
+  border-radius: $radius-lg;
+  padding: $space-6;
+}
+
+.cta__text {
+  color: $color-muted;
+  margin: $space-3 0 $space-5;
+}
