@@ -24,6 +24,11 @@ export interface HeroSection {
 export interface FeatureItem {
   title: string;
   text: string;
+  icon?: {
+    type: 'lottie';
+    src: string;
+    label: string;
+  };
 }
 
 export interface FeaturesSection {

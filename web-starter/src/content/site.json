@@ -32,15 +32,30 @@
           "items": [
             {
               "title": "Seksjonsbasert innhold",
-              "text": "Bytt fra JSON til headless API med minimal påvirkning på presentasjonslag."
+              "text": "Bytt fra JSON til headless API med minimal påvirkning på presentasjonslag.",
+              "icon": {
+                "type": "lottie",
+                "src": "/animations/rocket.json",
+                "label": "Rakettikon"
+              }
             },
             {
               "title": "Token-basert SCSS",
-              "text": "Behold visuell konsistens med sentrale designvariabler for farger, spacing og typografi."
+              "text": "Behold visuell konsistens med sentrale designvariabler for farger, spacing og typografi.",
+              "icon": {
+                "type": "lottie",
+                "src": "/animations/layers.json",
+                "label": "Lagikon"
+              }
             },
             {
               "title": "Dependency-light",
-              "text": "Kun Astro, Sass og TypeScript i grunnoppsettet."
+              "text": "Kun Astro, Sass og TypeScript i grunnoppsettet.",
+              "icon": {
+                "type": "lottie",
+                "src": "/animations/sparkles.json",
+                "label": "Stjerneikon"
+              }
             }
           ]
         },

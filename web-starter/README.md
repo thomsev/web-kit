@@ -57,3 +57,25 @@ This keeps rendering compatible with future headless CMS delivery.
 ## Environment
 Copy `.env.example` to `.env` if you need environment variables later.
 Current starter does not require env vars for local run.
+
+## Lottie animated icons
+- Lottie setup uses `lottie-web` and the reusable component `src/components/LottieIcon.astro`.
+- Feature items can include optional icon data:
+
+```json
+{
+  "title": "Eksempel",
+  "text": "Beskrivelse",
+  "icon": {
+    "type": "lottie",
+    "src": "/animations/rocket.json",
+    "label": "Rakettikon"
+  }
+}
+```
+
+- Place animation JSON files in `public/animations/`.
+- Starter includes placeholders:
+  - `public/animations/rocket.json`
+  - `public/animations/layers.json`
+  - `public/animations/sparkles.json`

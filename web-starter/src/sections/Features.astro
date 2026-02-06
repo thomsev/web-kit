@@ -1,5 +1,6 @@
 ---
 import Container from '@/components/Container.astro';
+import LottieIcon from '@/components/LottieIcon.astro';
 import type { FeaturesProps } from '@/content/types';
 
 const { section } = Astro.props as FeaturesProps;
@@ -11,6 +12,15 @@ const { section } = Astro.props as FeaturesProps;
     <ul class="features__list">
       {section.items.map((item) => (
         <li class="features__item">
+          {item.icon?.type === 'lottie' && (
+            <LottieIcon
+              className="features__icon"
+              src={item.icon.src}
+              label={item.icon.label}
+              loop={true}
+              autoplay={true}
+            />
+          )}
           <h3 class="features__item-title">{item.title}</h3>
           <p class="features__item-text">{item.text}</p>
         </li>
