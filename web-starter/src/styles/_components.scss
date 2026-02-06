@@ -1,0 +1,28 @@
+@use './tokens' as *;
+
+.btn {
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: $radius-md;
+  display: inline-flex;
+  font-weight: 600;
+  gap: $space-2;
+  padding: $space-2 $space-4;
+  text-decoration: none;
+}
+
+.btn--primary {
+  background: $color-primary;
+  color: $color-primary-contrast;
+}
+
+.btn--secondary {
+  background: $color-secondary;
+  border-color: $color-border;
+  color: $color-text;
+}
+
+.lottie-icon {
+  display: inline-block;
+}
+

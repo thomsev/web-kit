@@ -1,0 +1,30 @@
+---
+import Button from '@/components/Button.astro';
+import Container from '@/components/Container.astro';
+import type { HeroProps } from '@/content/types';
+
+const { section } = Astro.props as HeroProps;
+---
+
+<section class="hero section" id={section.id} aria-labelledby={`${section.id}-heading`}>
+  <Container>
+    <div class="hero__content">
+      <h1 class="hero__heading" id={`${section.id}-heading`}>{section.heading}</h1>
+      <p class="hero__lead">{section.lead}</p>
+      <div class="hero__actions">
+        <Button href={section.primaryAction.href} label={section.primaryAction.label}>
+          {section.primaryAction.label}
+        </Button>
+        {section.secondaryAction && (
+          <Button
+            href={section.secondaryAction.href}
+            variant="secondary"
+            label={section.secondaryAction.label}
+          >
+            {section.secondaryAction.label}
+          </Button>
+        )}
+      </div>
+    </div>
+  </Container>
+</section>

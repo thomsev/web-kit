@@ -1,0 +1,57 @@
+---
+interface Props {
+  src: string;
+  label: string;
+  className?: string;
+  loop?: boolean;
+  autoplay?: boolean;
+}
+
+const { src, label, className = '', loop = true, autoplay = true } = Astro.props;
+---
+
+<div
+  class:list={['lottie-icon', className]}
+  role="img"
+  aria-label={label}
+  data-lottie-player
+  data-lottie-src={src}
+  data-lottie-loop={loop ? 'true' : 'false'}
+  data-lottie-autoplay={autoplay ? 'true' : 'false'}
+></div>
+
+<script type="module" is:inline>
+  import lottie from 'lottie-web';
+
+  const initLottie = () => {
+    const players = document.querySelectorAll('[data-lottie-player]');
+
+    players.forEach((node) => {
+      if (!(node instanceof HTMLElement) || node.dataset.lottieMounted === 'true') {
+        return;
+      }
+
+      const path = node.dataset.lottieSrc;
+
+      if (!path) {
+        return;
+      }
+
+      lottie.loadAnimation({
+        container: node,
+        renderer: 'svg',
+        loop: node.dataset.lottieLoop === 'true',
+        autoplay: node.dataset.lottieAutoplay === 'true',
+        path
+      });
+
+      node.dataset.lottieMounted = 'true';
+    });
+  };
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initLottie, { once: true });
+  } else {
+    initLottie();
+  }
+</script>

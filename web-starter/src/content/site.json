@@ -1,0 +1,107 @@
+{
+  "site": {
+    "name": "Web Starter",
+    "url": "https://example.no",
+    "locale": "no"
+  },
+  "pages": [
+    {
+      "slug": "/",
+      "title": "Hjem",
+      "description": "En fleksibel Astro-start med seksjonsbasert innhold.",
+      "canonical": "/",
+      "sections": [
+        {
+          "type": "hero",
+          "id": "hero-hjem",
+          "heading": "Bygg raskere kundesider med samme grunnmur",
+          "lead": "Denne starteren gir et robust utgangspunkt med Astro, SCSS-tokens og innhold modellert for fremtidig headless CMS.",
+          "primaryAction": {
+            "label": "Kontakt oss",
+            "href": "/kontakt"
+          },
+          "secondaryAction": {
+            "label": "Les mer",
+            "href": "#funksjoner"
+          }
+        },
+        {
+          "type": "features",
+          "id": "funksjoner",
+          "heading": "Hvorfor denne starteren",
+          "items": [
+            {
+              "title": "Seksjonsbasert innhold",
+              "text": "Bytt fra JSON til headless API med minimal påvirkning på presentasjonslag.",
+              "icon": {
+                "type": "lottie",
+                "src": "/animations/rocket.json",
+                "label": "Rakettikon"
+              }
+            },
+            {
+              "title": "Token-basert SCSS",
+              "text": "Behold visuell konsistens med sentrale designvariabler for farger, spacing og typografi.",
+              "icon": {
+                "type": "lottie",
+                "src": "/animations/layers.json",
+                "label": "Lagikon"
+              }
+            },
+            {
+              "title": "Dependency-light",
+              "text": "Kun Astro, Sass og TypeScript i grunnoppsettet.",
+              "icon": {
+                "type": "lottie",
+                "src": "/animations/sparkles.json",
+                "label": "Stjerneikon"
+              }
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "id": "cta-start",
+          "heading": "Klar for neste prosjekt?",
+          "text": "Klon denne repoen og kom i gang med et strukturert, tilgjengelig og vedlikeholdbart oppsett.",
+          "action": {
+            "label": "Gå til kontakt",
+            "href": "/kontakt"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "/kontakt",
+      "title": "Kontakt",
+      "description": "Ta kontakt for å starte et nytt prosjekt.",
+      "canonical": "/kontakt",
+      "sections": [
+        {
+          "type": "hero",
+          "id": "hero-kontakt",
+          "heading": "La oss bygge noe bra sammen",
+          "lead": "Send oss en kort beskrivelse av prosjektet ditt, så tar vi en prat.",
+          "primaryAction": {
+            "label": "Send e-post",
+            "href": "mailto:hei@example.no"
+          },
+          "secondaryAction": {
+            "label": "Til forsiden",
+            "href": "/"
+          }
+        },
+        {
+          "type": "cta",
+          "id": "cta-kontakt",
+          "heading": "Trenger du rask avklaring?",
+          "text": "Vi svarer normalt innen én virkedag.",
+          "action": {
+            "label": "Ring oss",
+            "href": "tel:+4712345678"
+          }
+        }
+      ]
+    }
+  ]
+}
