@@ -8,31 +8,31 @@
     {
       "slug": "/",
       "title": "Hjem",
-      "description": "En fleksibel Astro-start med seksjonsbasert innhold.",
+      "description": "Moderne komponentshowcase med mørk neonprofil og Lottie-animasjoner.",
       "canonical": "/",
       "sections": [
         {
           "type": "hero",
           "id": "hero-hjem",
-          "heading": "Bygg raskere kundesider med samme grunnmur",
-          "lead": "Denne starteren gir et robust utgangspunkt med Astro, SCSS-tokens og innhold modellert for fremtidig headless CMS.",
+          "heading": "Bygg en moderne hjemmeside med komponenter som faktisk popper",
+          "lead": "En mørk, neon-grønn front med tydelige komponentblokker, Lottie-animasjoner og et uttrykk som føles premium fra første scroll.",
           "primaryAction": {
-            "label": "Kontakt oss",
+            "label": "Start prosjekt",
             "href": "/kontakt"
           },
           "secondaryAction": {
-            "label": "Les mer",
+            "label": "Se komponentene",
             "href": "#funksjoner"
           }
         },
         {
           "type": "features",
           "id": "funksjoner",
-          "heading": "Hvorfor denne starteren",
+          "heading": "Komponentbibliotek i praksis",
           "items": [
             {
-              "title": "Seksjonsbasert innhold",
-              "text": "Bytt fra JSON til headless API med minimal påvirkning på presentasjonslag.",
+              "title": "Hero med motion",
+              "text": "Lottie-drevne elementer gir liv til hero-seksjonen uten å gjøre siden tung.",
               "icon": {
                 "type": "lottie",
                 "src": "/animations/rocket.json",
@@ -40,8 +40,8 @@
               }
             },
             {
-              "title": "Token-basert SCSS",
-              "text": "Behold visuell konsistens med sentrale designvariabler for farger, spacing og typografi.",
+              "title": "Feature cards",
+              "text": "Kortuttrykk med mørke flater, neonkanter og tydelig hierarki for innhold.",
               "icon": {
                 "type": "lottie",
                 "src": "/animations/layers.json",
@@ -49,8 +49,8 @@
               }
             },
             {
-              "title": "Dependency-light",
-              "text": "Kun Astro, Sass og TypeScript i grunnoppsettet.",
+              "title": "Call-to-action",
+              "text": "En tydelig CTA med glow-effekt som drar blikket dit du vil ha handling.",
               "icon": {
                 "type": "lottie",
                 "src": "/animations/sparkles.json",
@@ -62,10 +62,10 @@
         {
           "type": "cta",
           "id": "cta-start",
-          "heading": "Klar for neste prosjekt?",
-          "text": "Klon denne repoen og kom i gang med et strukturert, tilgjengelig og vedlikeholdbart oppsett.",
+          "heading": "Klar for å lansere noe som ser dyrt ut?",
+          "text": "Dette oppsettet gir deg et skarpt visuelt uttrykk med moderne komponenter som er enkle å bygge videre på.",
           "action": {
-            "label": "Gå til kontakt",
+            "label": "Book en prat",
             "href": "/kontakt"
           }
         }
