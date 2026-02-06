@@ -133,6 +133,13 @@
   padding: $space-6;
 }
 
+
+.cta__icon {
+  height: 3.25rem;
+  margin-bottom: $space-3;
+  width: 3.25rem;
+}
+
 .cta__text {
   color: $color-muted;
   margin: $space-3 0 $space-5;
