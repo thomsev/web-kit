@@ -43,6 +43,11 @@ export interface CTASection {
   id: string;
   heading: string;
   text: string;
+  icon?: {
+    type: 'lottie';
+    src: string;
+    label: string;
+  };
   action: {
     label: string;
     href: string;

@@ -64,6 +64,11 @@
           "id": "cta-start",
           "heading": "Klar for å lansere noe som ser dyrt ut?",
           "text": "Dette oppsettet gir deg et skarpt visuelt uttrykk med moderne komponenter som er enkle å bygge videre på.",
+          "icon": {
+            "type": "lottie",
+            "src": "/animations/sparkles.json",
+            "label": "Stjerneikon"
+          },
           "action": {
             "label": "Book en prat",
             "href": "/kontakt"
@@ -96,6 +101,11 @@
           "id": "cta-kontakt",
           "heading": "Trenger du rask avklaring?",
           "text": "Vi svarer normalt innen én virkedag.",
+          "icon": {
+            "type": "lottie",
+            "src": "/animations/rocket.json",
+            "label": "Rakettikon"
+          },
           "action": {
             "label": "Ring oss",
             "href": "tel:+4712345678"

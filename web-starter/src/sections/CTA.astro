@@ -1,6 +1,7 @@
 ---
 import Button from '@/components/Button.astro';
 import Container from '@/components/Container.astro';
+import LottieIcon from '@/components/LottieIcon.astro';
 import type { CTAProps } from '@/content/types';
 
 const { section } = Astro.props as CTAProps;
@@ -9,6 +10,15 @@ const { section } = Astro.props as CTAProps;
 <section class="cta section" id={section.id} aria-labelledby={`${section.id}-heading`}>
   <Container>
     <div class="cta__box">
+      {section.icon?.type === 'lottie' && (
+        <LottieIcon
+          className="cta__icon"
+          src={section.icon.src}
+          label={section.icon.label}
+          loop={true}
+          autoplay={true}
+        />
+      )}
       <h2 class="cta__heading" id={`${section.id}-heading`}>{section.heading}</h2>
       <p class="cta__text">{section.text}</p>
       <Button href={section.action.href} label={section.action.label}>{section.action.label}</Button>
